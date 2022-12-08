@@ -26,7 +26,10 @@
     <title>@yield('title','ini judul')</title>
 </head>
 <body>
-    <h1 class="">COBA COBA</h1>
+    <div class="container py-[50px]">
+        <h1 class="text-center text-[blue]">Biodata Kucing</h1>
+    </div>
+
 
     <div class="container flex flex-wrap gap-[30px] ">
         @yield('parent_content')
