@@ -1,4 +1,3 @@
-
     @extends('parent')
     @section('title', 'Biodata User')
     @section('parent_content')
@@ -95,11 +94,11 @@
     @parent
 
     @foreach($users as $u =>$user)
-        @includeWhen($user['active'] === $filter['active'], 'components.cards',[
-
+        @includeWhen($user['active'] === $filter['active'], 'components.cards',
+        [
             'user' => $user,
-            'icon'=> $user['role'] == 'user' ? '<ion-icon name="logo-android"></ion-icon>'
-            : '<ion-icon name="logo-apple"></ion-icon>'
+            'icon'=> $user['role'] == 'user' ? '<ion-icon name="heart"></ion-icon>'
+            : '<ion-icon name="paw-outline"></ion-icon>'
         ])
 
     @endforeach

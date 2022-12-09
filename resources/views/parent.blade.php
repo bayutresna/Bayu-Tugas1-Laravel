@@ -27,14 +27,15 @@
 </head>
 <body>
     <div class="container py-[50px]">
-        <h1 class="text-center text-[blue]">Biodata Kucing</h1>
+        <h1 class="text-center text-[blue] text-[50px] font-[700] uppercase">Biodata Kucing</h1>
     </div>
 
 
-    <div class="container flex flex-wrap gap-[30px] ">
+    <div class="container flex flex-wrap gap-[30px] justify-center">
         @yield('parent_content')
     </div>
 
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
